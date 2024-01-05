@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>360 Video test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="http://localhost:8888/vr/index.php?code=e4da3b7fbbce2345d7772b0674a318d5">
+    <meta property="twitter:url" content="http://localhost:8888/vr/index.php?code=e4da3b7fbbce2345d7772b0674a318d5">
+    <meta itemprop="name" content="360 Video test">
+    <meta property="og:title" content="360 Video test">
+    <meta property="twitter:title" content="360 Video test">
+            <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=1704490698">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=1704490698">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=1704490698">
+    
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg?v=1704490698" color="#ffffff">
+    <link rel="shortcut icon" href="favicons/favicon.ico?v=1704490698">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml?v=1704490698">
+    <meta name="theme-color" content="#ffffff">        <link rel='stylesheet' type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    </head>
+<body>
+<style>
+    *:not(i) { font-family: 'Roboto', sans-serif; }
+</style>
+<div class="loading">
+    <div class="progress-circle noselect"></div>
+    <div class="progress">
+                <h3 class="noselect" id="name_virtualtour">360 Video test</h3>
+        <h2 class="noselect " id="author_virtualtour">presented by dougloussaert</h2>
+    </div>
+    </div>
+<script>
+    window.ip_visitor = '::1';
+    window.assets_interval = 50;
+    window.export = 1;
+</script>
+<script type="text/javascript" src="js/index.js?v=1704490698"></script>
+<a-scene id="vt_scene" scenelistener light="defaultLightsEnabled: false" style="opacity: 0;pointer-events: none;">
+    <a-assets timeout="5000">
+                    <img crossorigin="anonymous" id="marker" src="img/marker.png?v=3" />
+                            <img crossorigin="anonymous" id="close" src="img/close.png?v=3" />
+                            <img crossorigin="anonymous" id="poi_image" src="img/poi_image.png?v=3" />
+                            <img crossorigin="anonymous" id="poi_video" src="img/poi_video.png?v=3" />
+                            <img crossorigin="anonymous" id="poi_video360" src="img/poi_video360.png?v=3" />
+                            <img crossorigin="anonymous" id="poi_object3d" src="img/poi_object3d.png?v=3" />
+                            <img crossorigin="anonymous" id="poi_html" src="img/poi_html.png?v=3" />
+                            <img crossorigin="anonymous" id="poi_audio" src="img/poi_audio.png?v=3" />
+                <img crossorigin='anonymous' id='r_61' class='panorama_image' data-north='0' src='panoramas/mobile/pano_1704473089126.jpg' />                <audio crossorigin='anonymous' id='p_6' class='poi' src='content/Audio  1.mp3'></audio><audio crossorigin='anonymous' id='p_7' class='poi' src='content/Audio  2.mp3'></audio><audio crossorigin='anonymous' id='p_8' class='poi' src='content/Audio  3.mp3'></audio>    </a-assets>
+    <a-entity light="type: ambient; color: #FFF"></a-entity>
+    <a-entity light="type: directional; color: #FFF; intensity: 0.9" position="5 5 1"></a-entity>
+    <a-entity raycaster="objects:.landscape,.environmentGround,.environmentDressing; far:0.5;"></a-entity>
+    <a-entity id="spots" rotation="0 0 0" hotspots>
+        <a-entity id='pois_61' rotation='0 90 0' scale='1 1 1'><a-entity rotation='7.828868 -81.5656 0'><a-image class='poi_icon' data-raycastable material='alpha-test:0.5;transparent:true;' spot='object:poi;type:audio;linkto:#poi_content_6;spotgroup:pois_61' position='0 0 -12' scale='1 1 1'></a-image><a-audio data-raycastable id='poi_content_6' src='#p_6' rotation='-7 0 0' position='0 0 -11' scale='0 0 0'></a-audio></a-entity><a-entity rotation='7.602718 -96.1131 0'><a-image class='poi_icon' data-raycastable material='alpha-test:0.5;transparent:true;' spot='object:poi;type:audio;linkto:#poi_content_7;spotgroup:pois_61' position='0 0 -12' scale='1 1 1'></a-image><a-audio data-raycastable id='poi_content_7' src='#p_7' rotation='-7 0 0' position='0 0 -11' scale='0 0 0'></a-audio></a-entity><a-entity rotation='7.391442 -108.513 0'><a-image class='poi_icon' data-raycastable material='alpha-test:0.5;transparent:true;' spot='object:poi;type:audio;linkto:#poi_content_8;spotgroup:pois_61' position='0 0 -12' scale='1 1 1'></a-image><a-audio data-raycastable id='poi_content_8' src='#p_8' rotation='-7 0 0' position='0 0 -11' scale='0 0 0'></a-audio></a-entity></a-entity>    </a-entity>
+    <a-image id='close_video360' billboard data-raycastable material='alpha-test:0.5;transparent:true;' src='#close' scale='0 0 0' rotation='0 0 0' position='0 -11 0'></a-image>
+        <a-sky id="overlay" radius="400" opacity="0" color="#000000" position="0 0 0"></a-sky>
+    <a-sky id="skybox" data-id-room="61" src="#r_61" position="0 0 0" rotation="0 0 0"></a-sky>
+    <a-entity id=“cam_wrapper” rotation="0 5 0">
+        <a-entity id="cam" position="0 1.6 0" camera="fov:80" camera look-controls="touchEnabled: false"
+                  animation__zoomin="property:camera.fov;dur:600;to:60;startEvents:zoomin;"
+                  animation__zoomout="property:camera.fov;dur:400;to:80;startEvents:zoomout;">
+            <a-text font="font/Roboto-Regular-msdf.json" font-image="font/Roboto-Regular.png" negate="false" id="room_name" value="Bermuda 360 video test 3" color="white" align="center" position="0 0.25 -4" scale="0 0 0" opacity="0"
+                    animation__fadein="property:opacity;to:1;dur:400;startEvents:roomNameFadeIn"
+                    animation__fadeout="property:opacity;to:0;dur:400;startEvents:roomNameFadeOut"></a-text>
+            <a-text font="font/Roboto-Regular-msdf.json" font-image="font/Roboto-Regular.png" id="msg_close_video" value="Look down to close the video" align="center" position="0 0.25 -4" scale="0 0 0"></a-text>
+            <a-entity id="cursor-visual" cursor="fuse:true;fuseTimeout:2000"
+                      material="shader:flat;color:#ffffff;opacity:1;"
+                      position="0 0 -0.9"
+                      geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015;thetaLength:0"
+                      raycaster="objects: [data-raycastable]"
+                      animation="property: geometry.thetaLength; dir: alternate; dur: 250; easing: easeInSine; from:0;to: 360;startEvents:startFuseFix;pauseEvents:stopFuse;autoplay:false"
+                      animation__mouseenter="property: geometry.thetaLength; dir: alternate; dur: 2000; easing: easeInSine; from:0;to: 360;startEvents:startFuse;pauseEvents:stopFuse;autoplay:false"
+                      animation__mouseleave="property: geometry.thetaLength; dir: alternate; dur: 500; easing: easeInSine; to: 0;startEvents:stopFuse;autoplay:false">
+                <a-entity id="cursor-visual-bg" geometry="primitive:ring;radiusOuter:0.015;radiusInner:0.01" material="shader:flat;color:#000000;opacity:1;"></a-entity>
+            </a-entity>
+            <a-plane id="camfadeplane" rotation="10 0.5 0" position="0 0 -0.5" material="color:#000000;transparent:true;opacity:0" width="3" height="3"
+                     animation__fadein="property:material.opacity;to:1;dur:300;startEvents:camFadeIn"
+                     animation__fadeout="property:material.opacity;to:0;dur:200;startEvents:camFadeOut"></a-plane>
+        </a-entity>
+    </a-entity>
+</a-scene>
+</body>
+</html>
